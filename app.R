@@ -5,10 +5,16 @@ library(readxl)
 library(reshape2)
 library(reticulate)
 
+# <<<<<<< HEAD
 
 py_install("pysd", pip = TRUE)
 
-target <- 'D:/ui platform/COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
+target <- 'COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
+# =======
+# # setwd("D:/ui platform")
+# target <- 'D:/ui platform/COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
+# reticulate::use_python('D:/software/Anaconda/envs/r-reticulate/python.exe')
+# >>>>>>> 38eda976a921f2c139f811300dd7b37b8599421f
 py <- pysd_connect()
 
 py <- read_vensim(py, target)

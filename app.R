@@ -6,6 +6,7 @@ library(reshape2)
 
 # setwd("D:/ui platform")
 target <- 'D:/ui platform/COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
+reticulate::use_python('D:/software/Anaconda/envs/r-reticulate/python.exe')
 py <- pysd_connect()
 
 py <- read_vensim(py, target)

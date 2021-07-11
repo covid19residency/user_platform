@@ -1,8 +1,10 @@
-library(shiny)
 library(reticulate)
-reticulate::install_miniconda()
+reticulate::install_python()
 py_available()
 py_config()
+
+
+library(shiny)
 # Gets the port # from Heroku
 port <- Sys.getenv('PORT')
 

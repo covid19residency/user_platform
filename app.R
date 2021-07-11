@@ -9,6 +9,9 @@ library(reticulate)
 
 py_install("pysd", pip = TRUE)
 
+py_config()
+py_available()
+
 target <- 'COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
 # =======
 # # setwd("D:/ui platform")

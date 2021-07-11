@@ -3,9 +3,12 @@ library(pysd2r)
 library(ggplot2)
 library(readxl)
 library(reshape2)
+library(reticulate)
 
-setwd("D:/李昕怡/研究生/课程/capstone/covid19 impact on residence/ui platform")
-target <- 'COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
+
+py_install("pysd", pip = TRUE)
+
+target <- 'D:/ui platform/COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
 py <- pysd_connect()
 
 py <- read_vensim(py, target)

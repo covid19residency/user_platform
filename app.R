@@ -4,8 +4,8 @@ library(ggplot2)
 library(readxl)
 library(reshape2)
 
-setwd("D:/ui platform")
-target <- 'COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
+# setwd("D:/ui platform")
+target <- 'D:/ui platform/COVID-19 Sing Health Residency Training Model - NHG BS=5.mdl'
 py <- pysd_connect()
 
 py <- read_vensim(py, target)

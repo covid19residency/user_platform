@@ -1,6 +1,7 @@
 library(shiny)
 # Gets the port # from Heroku
 port <- Sys.getenv('PORT')
+library(reticulate)
 py_config()
 py_available()
 # Runs the app in the working directory. By default this will search for an `app.R` file or 
